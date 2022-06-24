@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  background-color: #202020;
+  color: white;
 }
 
 .main {
@@ -29,7 +31,6 @@
 }
 
 .title a {
-  color: #0070f3;
   text-decoration: none;
 }
 
@@ -42,18 +43,25 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
 }
 
-.title,
-.description {
+.title {
+  font-size: 50px;
+  color: #ffffff;
   text-align: center;
 }
 
 .description {
-  margin: 4rem 0;
+  color: #FFFFFF;
+  opacity: 0.25;
+  text-align: center;
+  letter-spacing: 8px;
+}
+
+.description {
+  margin: 0rem 0 4rem;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 25px;
 }
 
 .code {
@@ -66,11 +74,36 @@
 }
 
 .grid {
-  display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+  background-size: cover;
+  min-height: 460px;
+  min-width: 500px;
+}
+
+.pantherbg {
+  position: absolute;
+  margin-top: -100px;
+}
+
+.pantherbg img {
+  width: 500px;
+}
+
+.grid .subheading {
+  font-size: 20px;
+  line-height: 10px;
+  margin-top: 50px;
+}
+
+.grid .subheading2 {
+  font-size: 15px;
+  font-family: monospace;
+  line-height: 10px;
+  margin-top: 70px;
 }
 
 .card {
@@ -112,5 +145,23 @@
   .grid {
     width: 100%;
     flex-direction: column;
+    min-width: 100%;
   }
+
+  .pantherbg {
+    position: absolute;
+    margin-top: -100px;
+  }
+  
+  .pantherbg img {
+    width: 100px;
+  }
+}
+
+.MuiChip-outlined {
+  color: white;
+}
+
+.chips {
+  display: flex;
 }

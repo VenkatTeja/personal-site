@@ -6,6 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import MaterialChip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import React, { useState, useEffect } from "react";
+import Button from '@mui/material/Button';
 
 declare var window: any;
 
@@ -74,11 +75,36 @@ const Home: NextPage = () => {
         </div>
 
         <Stack direction={chipsDirection} spacing={1}>
-          <Chip label="My Story" variant="outlined" />
-          <Chip label="My Projects" variant="outlined" />
-          <Chip label="Freelance Projects" variant="outlined" />
-          <Chip label="Books I read" variant="outlined" />
-          <Chip label="Memes" variant="outlined" />
+          <Chip label="My Story" variant="outlined" 
+            sx={{
+              "& .MuiChip-label": {
+                color: "white"
+              }
+            }} />
+          <Chip label="My Projects" variant="outlined" 
+            sx={{
+              "& .MuiChip-label": {
+                color: "white"
+              }
+            }} />
+          <Chip label="Freelance Projects" variant="outlined" 
+            sx={{
+              "& .MuiChip-label": {
+                color: "white"
+              }
+            }} />
+          <Chip label="Books I read" variant="outlined" 
+            sx={{
+              "& .MuiChip-label": {
+                color: "white"
+              }
+            }} />
+          <Chip label="Memes" variant="outlined" 
+            sx={{
+              "& .MuiChip-label": {
+                color: "white"
+              }
+            }} />
         </Stack> 
       </main>
 

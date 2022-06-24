@@ -30,6 +30,7 @@ const Home: NextPage = () => {
   
   const chipStyle = {
     'height': '40px',
+    'padding': '10px 10px',
     'borderRadius': '20px',
     'minWidth': '80px',
     "& .MuiChip-root": {
@@ -68,7 +69,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.subheading}>
             <h3>Believer of Web3 and Blockchain</h3>
-            <h3>Panther is the spirit animal</h3>
+            <h3>Technology Optimist</h3>
           </div>
           <div className={styles.subheading2}>
             <p>IIT Madras alumnus</p>

@@ -143,11 +143,30 @@
   margin-left: 0.5rem;
 }
 
+@media (min-width: 601px) {
+  .pantherDesktop {
+    display: block;
+  }
+  
+  .pantherMobile {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
     min-width: 100%;
+  }
+  
+  .pantherDesktop {
+    display: none;
+  }
+  
+  .pantherMobile {
+    display: block;
+    margin: 0 auto;
   }
 
   .pantherbg {
@@ -167,4 +186,8 @@
 
 .chips {
   display: flex;
+}
+
+.icon {
+  filter: brightness(0) invert(1);
 }

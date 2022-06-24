@@ -23,13 +23,14 @@ const Chip = (props: any) => {
 };
 
 const Home: NextPage = () => {
-  const [chipsDirection, setChipsDirection] = useState('column');
+  type directionType = 'column' | 'row'
+  const [chipsDirection, setChipsDirection] = useState<directionType>('column');
   
   let height = 1920
   if (typeof screen !== "undefined") {
     height = screen.width;
   }
-  let _chipsDirection = height <= 600 ? 'column' : 'row'
+  let _chipsDirection: directionType = height <= 600 ? 'column' : 'row'
   console.log('height', height, _chipsDirection)
   useEffect(() => {
     setChipsDirection(_chipsDirection)

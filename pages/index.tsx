@@ -117,7 +117,7 @@ const Home: NextPage = () => {
         </Stack> 
         <br/>
         <br/>
-        <Stack direction={chipsDirection} spacing={1}>
+        <Stack direction='row' spacing={1}>
           <IconButton aria-label="twitter" href="https://bit.ly/3xRxiHz" size="small" color="primary">
             <TwitterIcon sx={iconStyle}/>
           </IconButton>

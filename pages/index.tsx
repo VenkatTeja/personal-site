@@ -48,7 +48,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>web3panther</title>
+        <title>@web3panther - Venkat Kunisetty</title>
         <meta name="description" content="Web3 Entrepreneur, developer, algo-trader and freelancer" />
         <link rel="icon" href="/favicon.svg" />
       </Head>

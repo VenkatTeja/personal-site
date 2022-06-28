@@ -11,6 +11,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { SvgIcon } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 declare var window: any;
 
@@ -118,6 +119,9 @@ const Home: NextPage = () => {
         <br/>
         <br/>
         <Stack direction='row' spacing={1}>
+          <IconButton aria-label="github" href="https://github.com/VenkatTeja" size="small" color="primary">
+            <GitHubIcon sx={iconStyle}/>
+          </IconButton>
           <IconButton aria-label="twitter" href="https://bit.ly/3xRxiHz" size="small" color="primary">
             <TwitterIcon sx={iconStyle}/>
           </IconButton>
